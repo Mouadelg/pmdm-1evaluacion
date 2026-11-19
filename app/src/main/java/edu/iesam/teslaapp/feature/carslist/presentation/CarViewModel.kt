@@ -31,7 +31,9 @@ class CarViewModel(
         car: Car?
     )
 
-    fun loadCarById(id: String) : Car? {
-        return getCarByIdUseCase.invoke(id)
+    fun loadCarById(id: String) {
+        _uiState.value = UiState(
+            car = getCarByIdUseCase.invoke(id)
+        )
     }
 }
