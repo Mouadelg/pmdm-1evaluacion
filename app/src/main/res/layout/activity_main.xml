@@ -40,7 +40,10 @@
             app:layout_constraintTop_toBottomOf="@id/input_car_id" />
         <!-- Pintar vehículo -->
 
-
+        <include
+            android:id="@+id/car_layout"
+            app:layout_constraintStart_toEndOf="parent"
+            layout="@layout/view_car_found"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
