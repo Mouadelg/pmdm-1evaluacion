@@ -31,7 +31,7 @@ class CarViewModel(
         car: Car?
     )
 
-    fun loadCarById(id: String) : Car {
+    fun loadCarById(id: String) : Car? {
         return getCarByIdUseCase.invoke(id)
     }
 }
